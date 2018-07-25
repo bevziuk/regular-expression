@@ -24,7 +24,7 @@ let lang_gr = '\/(ru|uk)\/novostroyki'; //1
 
 let oblast_gr = '(?:-(\\w*-?\\w*skaya)(?:-oblast))?'; //2
 //(?!(' + exceptions_gr + '))
-let city_gr = '(?:-(\\w*-?(?:(?!' + exceptions_gr + ')\\w*)))?'; //3
+let city_gr = '(?:-(?:(?!(' + exceptions_gr + ')))(\\w*-?(?:(?!' + exceptions_gr + ')\\w*)))?'; //3
 let city_gr_2 = '(kiev|vinnitsa)?'; // як варіант добавити усі міста (аналогія до областей, але багато)
 
 let rayon_gr = '(?:(?:-rayon-)(\\w*))|'; //4
